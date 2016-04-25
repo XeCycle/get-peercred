@@ -1,0 +1,16 @@
+{
+  "name": "get-peercred",
+  "version": "1.0.0",
+  "description": "Get SO_PEERCRED from a connected UNIX domain socket",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "install": "node-gyp rebuild"
+  },
+  "author": "Carl Lei",
+  "license": "CC0-1.0",
+  "gypfile": true,
+  "dependencies": {
+    "nan": "2.2.1"
+  }
+}
