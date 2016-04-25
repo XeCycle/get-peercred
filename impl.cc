@@ -41,4 +41,4 @@ void Init(v8::Local<v8::Object> exports)
                Nan::New<v8::FunctionTemplate>(getCred)->GetFunction());
 }
 
-NODE_MODULE(getCred, Init)
+NODE_MODULE(get_cred, Init)
