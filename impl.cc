@@ -26,7 +26,7 @@ void getCred(const Nan::FunctionCallbackInfo<v8::Value>& info)
     return;
   }
 
-  v8::Local<v8::Object> obj = Nan::New<v8::Object>();
+  auto obj = Nan::New<v8::Object>();
   obj->Set(Nan::New("pid").ToLocalChecked(), Nan::New(cred.pid));
   obj->Set(Nan::New("uid").ToLocalChecked(), Nan::New(cred.uid));
   obj->Set(Nan::New("gid").ToLocalChecked(), Nan::New(cred.gid));
